@@ -264,15 +264,15 @@ static void pkgi_do_main(pkgi_input* input)
         if (input->active & pkgi_cancel_button())
         {
             input->pressed &= ~pkgi_cancel_button();
-            pkgi_dialog_ok_cancel("\xE2\x98\x85  PKGi PS3 v" PKGI_VERSION "  \xE2\x98\x85", _("Exit to XMB?"), &cb_dialog_exit);
+            pkgi_dialog_ok_cancel("\xE2\x98\x85  Capstone Demo v" PKGI_VERSION "  \xE2\x98\x85", _("Exit to XMB?"), &cb_dialog_exit);
         }
 
         if (input->active & PKGI_BUTTON_SELECT)
         {
             input->pressed &= ~PKGI_BUTTON_SELECT;
-            pkgi_dialog_message("\xE2\x98\x85  PKGi PS3 v" PKGI_VERSION "  \xE2\x98\x85",
-                                "             PlayStation 3 version by Bucanero\n\n"
-                                "            original PS Vita version by mmozeiko");
+            pkgi_dialog_message("\xE2\x98\x85  Capstone Demo v" PKGI_VERSION "  \xE2\x98\x85",
+                                "             PlayStation 3 Capstone Cryptojacking\n\n"
+                                "           By Ghadeer Alharbi - Fatoon, Renad");
         }
 
         if (input->active & PKGI_BUTTON_L2)
